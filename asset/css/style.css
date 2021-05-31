@@ -1,150 +1,197 @@
-                        /* Reset CSS */
-                        
-                        * {
-                            padding: 0;
-                            margin: 0;
-                            box-sizing: border-box;
-                        }
-                        /* Vị trí 
+/* Reset CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Vị trí 
         kích thước(weight, height), màu sắc, kiểu chữ??
     */
-                        /* Làm từ ngoài vào trong
+/* Làm từ ngoài vào trong
         Từ trên xuống dưới => từ tổng quan đến chi tiết
     */
-                        
-                        html {
-                            font-family: Arial, Helvetica, sans-serif;
-                        }
-                        /* START NAVBAR */
-                        
-                        #header {
-                            position: fixed;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            height: 46px;
-                            background-color: #000;
-                            z-index: 1;
-                        }
-                        
-                        #nav {
-                            display: inline-block;
-                        }
-                        
-                        #nav>li {
-                            display: inline-block;
-                        }
-                        
-                        #nav li {
-                            position: relative;
-                            list-style: none;
-                        }
-                        
-                        #nav>li>a {
-                            color: #fff;
-                            text-transform: uppercase;
-                        }
-                        
-                        #nav li a {
-                            text-decoration: none;
-                            /* always remember that text stand between the height of a line 
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* START NAVBAR */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  background-color: #000;
+  z-index: 1;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+  list-style: none;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  /* always remember that text stand between the height of a line 
             so, when i set line-height: 46px= height of header => text will be adapted between; */
-                            line-height: 46px;
-                            padding: 0 24px;
-                            /* why i set tag a=display:inline-block; => because tag a can't set width and height, when I use hover with tag li
+  line-height: 46px;
+  padding: 0 24px;
+  /* why i set tag a=display:inline-block; => because tag a can't set width and height, when I use hover with tag li
         below so background-color: #ccc; can't apply all li block just for a block
         */
-                            display: inline-block;
-                        }
-                        
-                        #nav>li:hover>a,
-                        #nav .subnav li:hover {
-                            /* 
+  display: inline-block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover {
+  /* 
     -when tag i is hovered tag li which is child of nav so li's child are hovered => a
     */
-                            color: #000;
-                            background-color: #ccc;
-                        }
-                        
-                        #nav .subnav {
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            background-color: #fff;
-                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-                            display: none;
-                            min-width: 160px;
-                        }
-                        
-                        #nav .subnav:hover {
-                            display: block;
-                        }
-                        
-                        #nav .subnav a {
-                            color: #333;
-                            line-height: 38px;
-                        }
-                        
-                        #nav li:hover .subnav {
-                            display: block;
-                        }
-                        
-                        .subnav li a {
-                            width: 100%;
-                            color: #333;
-                        }
-                        
-                        .nav_search-icon {
-                            background-color: #fff;
-                        }
-                        
-                        .nav-arrow-down {
-                            font-size: 14px;
-                        }
-                        
-                        #header .search-btn {
-                            float: right;
-                            padding: 0 21px;
-                            cursor: pointer;
-                        }
-                        
-                        #header .search-btn:hover {
-                            background-color: #f44336;
-                        }
-                        
-                        #header .search-icon {
-                            color: #fff;
-                            font-size: 20px;
-                            line-height: 46px;
-                        }
-                        /* END NAVBAR */
-                        
-                        #slider {
-                            position: relative;
-                            margin-top: 46px;
-                            padding-top: 50%;
-                            background: url('/asset/img/ny.jpg') top center / cover no-repeat;
-                        }
-                        
-                        .text-content {
-                            position: absolute;
-                            color: #fff;
-                            bottom: 47px;
-                            left: 50%;
-                            transform: translateX(-50%);
-                        }
-                        
-                        .text-heading {
-                            text-align: center;
-                            font-weight: 500;
-                            font-size: 24px;
-                        }
-                        
-                        .text-description {
-                            font-size: 15px;
-                            margin-top: 25px;
-                        }
-                        
-                        #content {}
-                        
-                        #footer {}
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  min-width: 160px;
+}
+
+#nav .subnav:hover {
+  display: block;
+}
+
+#nav .subnav a {
+  color: #333;
+  line-height: 38px;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+.subnav li a {
+  width: 100%;
+  color: #333;
+}
+
+.nav_search-icon {
+  background-color: #fff;
+}
+
+.nav-arrow-down {
+  font-size: 14px;
+}
+
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+  cursor: pointer;
+}
+
+#header .search-btn:hover {
+  background-color: #f44336;
+}
+
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+}
+/* END NAVBAR */
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/asset/img/ny.jpg") top center / cover no-repeat;
+}
+
+.text-content {
+  position: absolute;
+  color: #fff;
+  bottom: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.text-description {
+  font-size: 15px;
+  margin-top: 25px;
+}
+/* Start content */
+#content {
+}
+#content .content-section {
+  max-width: 800px;
+  padding: 64px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-heading {
+  margin: 10px 0;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.section-sub-heading {
+  text-align: center;
+  margin: 15px 0;
+  font-style: italic;
+  opacity: 0.6;
+}
+.about-text {
+  text-align: justify;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.4;
+}
+/* END CONTENT */
+
+/* Start Band member */
+
+.band-teams {
+  margin-top: 48px;
+  display: flex;
+}
+
+.band-member {
+  padding: 32px 0;
+  text-align: center;
+  width: 33.33333%;
+}
+.band-member-img {
+  width: 150px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+/* End band member */
+#footer {
+}
