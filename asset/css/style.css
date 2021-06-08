@@ -18,8 +18,13 @@
                         /* START NAVBAR */
                         
                         #header {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            right: 0;
                             height: 46px;
                             background-color: #000;
+                            z-index: 1;
                         }
                         
                         #nav {
@@ -114,7 +119,31 @@
                         }
                         /* END NAVBAR */
                         
-                        #slider {}
+                        #slider {
+                            position: relative;
+                            margin-top: 46px;
+                            padding-top: 50%;
+                            background: url('/asset/img/ny.jpg') top center / cover no-repeat;
+                        }
+                        
+                        .text-content {
+                            position: absolute;
+                            color: #fff;
+                            bottom: 47px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                        
+                        .text-heading {
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: 24px;
+                        }
+                        
+                        .text-description {
+                            font-size: 15px;
+                            margin-top: 25px;
+                        }
                         
                         #content {}
                         
