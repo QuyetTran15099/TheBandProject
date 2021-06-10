@@ -145,8 +145,7 @@ html {
   margin-top: 25px;
 }
 /* Start content */
-#content {
-}
+
 #content .content-section {
   max-width: 800px;
   padding: 64px 16px;
@@ -193,5 +192,87 @@ html {
 }
 
 /* End band member */
+
+/* Start Tour */
+.tour-black {
+  color: #fff;
+  background-color: #000;
+}
+.tour-ul {
+  background-color: #fff;
+  list-style: none;
+  border: 1px solid #ccc;
+}
+.tour-ul li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+  line-height: 25px;
+}
+.tour-text-grey {
+  color: #757575;
+}
+.tour-white li span {
+  color: #fff;
+  background-color: #f44336;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  margin-left: 16px;
+}
+.tour-ul li .month-tours--badge {
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  float: right;
+}
+.tour-location {
+  padding: 32px 8px;
+  margin: 0 -16px;
+  display: flex;
+}
+.tour-location-item {
+  padding: 0 8px;
+  margin-bottom: 16px;
+  width: 33.3333%;
+}
+.tour-location-item img {
+  width: 245px;
+}
+
+.tour-location-info {
+  color: #000;
+  background-color: #fff;
+  padding: 0.15px 16px;
+}
+.tour-margin-15 {
+  margin: 15px 0;
+}
+.btn {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  background-color: #000;
+  color: #fff;
+  text-transform: none;
+  border-style: none;
+  width: 110px;
+}
+.btn:hover {
+  background-color: #ccc;
+}
+/* END TOUR */
+
+/* Start form */
+.set-width {
+  display: flex;
+}
+.contact {
+  flex-direction: column;
+}
+/* End form */
 #footer {
 }
