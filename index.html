@@ -82,7 +82,7 @@
                 </div>
 
             </div>
-
+            <!-- TOUR -->
             <div class="tour-black">
                 <div class="content-section">
                     <h2 class="section-heading">TOUR DATES</h2>
@@ -99,60 +99,77 @@
                             <span class="month-tours--badge">3</span>
                         </li>
                     </ul>
-                    <div class="tour-location">
-                        <div class="tour-location-item newyork">
-                            <img src="./asset/img/newyork.jpg" alt="ny" class="tour-location-newyork-img">
-                            <div class="tour-location-info">
-                                <p class="tour-margin-15" style="font-weight: bolder;font-size: 15px;">New York</p>
-                                <p class="tour-margin-15">Fri 27 Nov 2016</p>
-                                <p class="tour-margin-15">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn">Buy Tickets</button>
+                    <div class="row place-list">
+                        <div class="col col-third">
+                            <img src="./asset/img/newyork.jpg" alt="ny" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="" class="place-buy-btn">Buy Ticket</a>
                             </div>
                         </div>
-                        <div class="tour-location-item paris">
-                            <img src="./asset/img/paris.jpg" alt="" class="tour-location-newyork-img">
-                            <div class="tour-location-info">
-                                <p class="tour-margin-15" style="font-weight: bolder;">New York</p>
-                                <p class="tour-margin-15">Fri 27 Nov 2016</p>
-                                <p class="tour-margin-15">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn">Buy Tickets</button>
+                        <div class="col col-third">
+                            <img src="./asset/img/paris.jpg" alt="ny" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="" class="place-buy-btn">Buy Ticket</a>
                             </div>
                         </div>
-                        <div class="tour-location-item sanfacisco">
-                            <img src="./asset/img/sanfran.jpg" alt="" class="tour-location-newyork-img">
-                            <div class="tour-location-info">
-                                <p class="tour-margin-15" style="font-weight: bolder;font-size: 15px;">New York</p>
-                                <p class="tour-margin-15">Fri 27 Nov 2016</p>
-                                <p class="tour-margin-15">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn">Buy Tickets</button>
+                        <div class="col col-third">
+                            <img src="./asset/img/sanfran.jpg" alt="ny" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="" class="place-buy-btn">Buy Ticket</a>
                             </div>
                         </div>
+                        <div class="clear"></div>
                     </div>
                 </div>
 
             </div>
+
+            <!-- contact form -->
             <div class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
-                <div class="set-width">
-                    <div class="contact">
-                        <i class="ti-location-arrow"></i>Chicago, US
-                        <i class="ti-microphone"></i>Phone: +00 151515
-                        <i class="ti-email"></i>Email: mail@mail.com
+                <div class="row contact-form">
+                    <div class="col col-half contact-info">
+                        <!-- <p><i class="ti-location-pin">Chicago, US</i></p>
+                        <p><i class="ti-mobile">Phone: +00 151515</i></p>
+                        <p><i class="ti-email"> Email: mail@mail.com</i></p> -->
+                        <i class="ti-location-pin">Chicago, US</i>
+                        <br>
+                        <i class="ti-mobile">Phone: +00 151515</i>
+                        <br>
+                        <i class="ti-email"> Email: mail@mail.com</i></ <br>
+                        <br>
                     </div>
-                    <div class="contact-form">
+                    <div class="col col-half">
                         <form action="">
-                            <div class="name">
-                                <input type="text" class="input-form" required name="Name" placeholder="Name">
+                            <div class="row ">
+                                <div class="col col-half">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" id="" class="form-control" placeholder="Email" required>
+                                </div>
+                                <!-- <div class="clear"></div> -->
+                                <div class="col col-full mt-8">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Massage"
+                                        required>
+                                </div>
                             </div>
-                            <div class="email" class="input-form">
-                                <input type="text" class="input-form" required name="Email" placeholder="Email">
-                            </div>
-                            <input type="text" placeholder="Message">
-                            <button class="send-btn">Send</button>
+                            <input class="mt-16 form-submit" type="submit" value="SEND">
+                            <div class="row"></div>
                         </form>
                     </div>
                 </div>
+
 
             </div>
 
@@ -167,6 +184,9 @@
                 <i class="ti-linkedin"></i>
                 <p>Powered by w3.css</p>
             </footer>
+
+
+
 </body>
 
 </html>
